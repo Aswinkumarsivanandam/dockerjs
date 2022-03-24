@@ -5,7 +5,7 @@ pipeline {
       stage('Run Project') {
             agent {
                 docker {
-                    image 'node:14.17.4'
+                    image 'node:latest'
                     reuseNode true
                 }
             }
